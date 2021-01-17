@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+<form  action="http://www.ofppt.ma">
+<center>
+<table width="50%" border="1">
+<tr>
+<td><label for="txtLogin">Login</label></td>
+<td><input   id="txtLogin" type="text" placeholder="Entrer votre Login"/></td>
+<td><span id="spnLogin" style="color:red"></span></td>
+</tr>
+<tr>
+<td><label for="txtEmail">Email</label></td>
+<td><input   id="txtEmail" type="email" placeholder="Entrer votre email"/></td>
+<td><span id="spnEmail" style="color:red"></span></td>
+</tr>
+<tr>
+<td><label for="txtEmail2">Email2</label></td>
+<td><input   id="txtEmail2" type="text" pattern="\w+([.-]\w+)* @\w+([.-]\w+)*\.\w+" placeholder="Entrer votre email"/></td>
+<td><span id="spnEmail" style="color:red"></span></td>
+</tr>
+<td></td>
+<td></td>
+<td></td>
+
+</tr>
+<tr>
+<td><label for="txtCIN">CIN</label></td>
+<td><input   id="txtCIN" pattern="[A-Z]{1,2}\d{5,6}" type="text" placeholder="Entrer votre CIN"/></td>
+<td><span id="spnCIN" style="color:red"></span></td>
+</tr>
+
+
+<tr>
+<td></td>
+<td><input type="submit"  value="Envoyer"/></td>
+<td></td>
+</tr>
+</table>
+</form>
+</center>
+<script>
+function valider()
+{
+var login=document.getElementById("txtLogin").value
+if(login=="")
+{
+document.getElementById("spnLogin").innerHTML="login obligatoire"
+//alert("login obligatoire")
+return false}
+else
+{return true}
+
+
+
+}
+</script>
+</body>
+</html>

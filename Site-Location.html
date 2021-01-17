@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon Site</title>
+	<link rel="stylesheet" type="text/css" href="Site-Location.css">
+</head>
+<body>
+	<header>
+		<div id="titre_principal">
+			<div id="logo">
+				<img src="">
+				<h1>OUABANE Ayoub</h1>
+			</div>
+			<h2>Voiture Location</h2>
+			</div>
+			<!--barre défilante"-->
+				<div>
+					<marquee> Meilleures Promos et Véhicules  </marquee>
+				</div>
+<!--fin de la barre défilante-->
+		</div>
+		<nav>
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Inscription</a></li>
+					<li><a href="#">Authentification</a></li>
+					<li><a href="#">Contact</a></li>
+                    <li><a href="#">Galerie</a></li>
+				</ul>
+		</nav>
+	</header>
+
+	<section>
+		<div class="Container">
+			<img name="Slide" width="500" height="400">
+			<script >
+				var i = 0; //Start point
+				var images = [];
+				var time = 3000;
+
+				 //Images list
+				 images[0]='Qashqai.jpg';
+				 images[1]='Rifter.jpg';
+				 images[2]='Discovery.jpg';
+				 images[3]='Tiguan.jpg';
+
+
+				 //Change Images
+				 function changeImg(){
+				 	document.Slide.src = images[i];
+
+				 	if(i<images.length -1){i++;}
+				 	else { i = 0;}
+
+				 	setTimeout("changeImg()",time);
+				 }
+				 window.onload = changeImg;
+			</script>
+
+           <!-- <div class="Slider">
+               <div class="Slides">
+            <slide><img src="range.jpg"></slide> 
+              <slide><img src="clioo.jpg" style="width: 550px;"></slide>
+            <slide><img src="mercedes.jpg"></slide> 
+               <slide><img src="bmw.jpg" style="width:  610px;";></slide>
+               Qashqai.jpg">
+              <img src="Rifter.jpg">
+              <img src="Discovery.jpg">
+              <img src="Tiguan.jpg
+              	<slide><img src="peugeot.jpg"></slide>-->
+            
+
+		</div>
+		<div id="div_listing">
+<div class="item_container col-sm-6 text-center left">
+<div class="item">
+<h3 class="matchHeight2" style="">Location Particulier</h3>
+<div class="matchHeight3" style="">
+<a href="/location-voiture-maroc/citadines-compactes/" title="Découvrez tous nos véhicules de location de la catégorie Citadines &amp; compactes" class="photo"><img src="/upload/vehicules_types/400/location-voiture-maroc_citadines-compactes_HMA.jpg" data-src="/upload/vehicules_types/400/location-voiture-maroc_citadines-compactes_HMA.jpg" class="lozad img-responsive" height="300" data-index="Citadines &amp; compactes" alt="Citadines &amp; compactes" data-loaded="true"></noscript></a>
+</div>
+<p class="descriptif matchHeight4" style="">Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages</p>
+<a href="/location-voiture-maroc/citadines-compactes/" title="Découvrez tous nos véhicules de location de la catégorie Citadines &amp; compactes" class="btn btn-default detail">+ de détails &gt;</a>
+</div></div>
+<div class="item_container col-sm-6 text-center right">
+<div class="item">
+<h3 class="matchHeight2" style="">Location Professionnelle</h3>
+<div class="matchHeight3" style="">
+<a href="/location-voiture-maroc/suv-4x2-4x4/" title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd" class="photo"><img src="/upload/vehicules_types/400/location-voiture-maroc_suv-et-4wd_HMA.jpg" data-src="/upload/vehicules_types/400/location-voiture-maroc_suv-et-4wd_HMA.jpg" class="lozad img-responsive" height="300" data-index="Suv et 4wd" alt="Suv et 4wd" data-loaded="true"><noscript><img src="/upload/vehicules_types/400/location-voiture-maroc_suv-et-4wd_HMA.jpg" class="iimg-responsive"  height="300"  alt="Suv et 4wd" /></noscript></a>
+</div>
+<p class="descriptif matchHeight4" style="">Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la performance</p>
+<a href="/location-voiture-maroc/suv-4x2-4x4/" title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd" class="btn btn-default detail">+ de détails &gt;</a>
+</div></div>
+<div class="item_container col-sm-6 text-center left">
+<div class="item">
+<h3 class="matchHeight2" style="">Location de Luxe</h3>
+<div class="matchHeight3" style="">
+<a href="/location-voiture-maroc/premium/" title="Découvrez tous nos véhicules de location de la catégorie Premium" class="photo"><img src="/upload/vehicules_types/400/location-voiture-maroc_premium_HMA.jpg" data-src="/upload/vehicules_types/400/location-voiture-maroc_premium_HMA.jpg" class="lozad img-responsive" height="300" data-index="Premium" alt="Premium" data-loaded="true"><noscript><img src="/upload/vehicules_types/400/location-voiture-maroc_premium_HMA.jpg" class="iimg-responsive"  height="300"  alt="Premium" /></noscript></a>
+</div>
+<p class="descriptif matchHeight4" style=""> Vivez une expérience unique avec la gamme PREMIUM! Conçue spécialement pour les amateurs du prestige, confort et plaisir! </p>
+<a href="/location-voiture-maroc/premium/" title="Découvrez tous nos véhicules de location de la catégorie Premium" class="btn btn-default detail">+ de détails &gt;</a>
+</div></div>
+
+</div>
+<p class="descriptif matchHeight4" style="">Une gamme de véhicules utilitaires pour vous accompagner dans vos besoins professionnels</p>
+<a href="/location-voiture-maroc/utilitaires/" title="Découvrez tous nos véhicules de location de la catégorie Utilitaires" class="btn btn-default detail">+ de détails &gt;</a>
+</div></div>
+</div>
+		<aside>
+
+			
+		</aside>
+	</section>
+	<div></div>
+	<footer>
+		<p>Contact </p>
+
+	</footer>
+</body>
+</html>

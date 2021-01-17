@@ -1,0 +1,27 @@
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+nav li
+{
+	margin-right:15px;
+}
+nav a
+{
+	padding-bottom: 30px;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}

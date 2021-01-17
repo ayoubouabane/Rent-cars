@@ -1,0 +1,60 @@
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+}
+header
+{
+     background: #626567;
+     height: 100px;
+     width: 100%;
+     margin: 0;
+     padding: 10px 0;
+     		margin-bottom: 40px;
+}
+body
+{
+	background-color: #F0F2F5;
+	     margin: 0;
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+
+}
+nav li
+{
+	margin-right:15px;
+
+}
+nav a
+{
+	padding-bottom: 30px;
+		color: white;
+}
+.Container
+{
+	margin-left: 30% ;
+}
+
+/*
+.slides
+{
+	width: calc(100px * 3);
+	animation: glisse 5s infinite;
+}
+.slider
+{
+	overflow: hidden;
+	margin: 150px auto;
+}
+@keyframes glisse
+{
+	0% { transform: : translateX(0); }
+		33% { transform: : translateX(-500px); }
+			66% { transform: : translateX(-1000px); }
+				100% { transform: : translateX(0); }
+}

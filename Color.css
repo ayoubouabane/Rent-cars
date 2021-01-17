@@ -1,0 +1,15 @@
+body
+{
+	background-image: url("C:/Users/Public/Pictures/Sample Pictures/Koala.jpg"), url("C:/Users/AYOUB/Desktop/ofppt/images.jpg") background-size 10em;
+	background-position: top;
+	
+	background-size: 50em;
+	}
+h1 
+{	
+	text-align: center;
+	border: 3px blue dotted;
+	border-radius: 20px / 10px;
+	box-shadow: 6px 6px 8px orange;
+	text-shadow: 6px 6px 8px blue;
+}
