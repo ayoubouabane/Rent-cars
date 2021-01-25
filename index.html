@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon Site</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div id="titre_principal">
+        <img src="assets/images/log.jpg" width="200" height="150">
+    </div>
+    <!--barre défilante"-->
+    <div>
+        <marquee> Meilleures Promos et Véhicules</marquee>
+    </div>
+    <!--fin de la barre défilante-->
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Authentification</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Galerie</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <div class="container">
+        <img name="Slide" width="1000" height="800">
+        <script>
+            var i = 0; //Start point
+            var images = [];
+            var time = 3000;
+
+            //Images list
+            images[0] = 'assets/images/Qashqai.jpg';
+            images[1] = 'assets/images/Rifter.jpg';
+            images[2] = 'assets/images/Discovery.jpg';
+            images[3] = 'assets/images/Tiguan.jpg';
+            images[4] = 'assets/images/Jaguar.jpg';
+            images[5] = 'assets/images/jaquar.jpg';
+            images[6] = 'assets/images/Porsche.jpg';
+            images[7] = 'assets/images/MERCEDE.jpg';
+            images[8] = 'assets/images/Volan.jpg';
+
+            //Change Images
+            function changeImg() {
+                document.Slide.src = images[i];
+
+                if (i < images.length - 1) {
+                    i++;
+                }
+                else {
+                    i = 0;
+                }
+
+                setTimeout("changeImg()", time);
+            }
+
+            window.onload = changeImg();
+        </script>
+        <!-- <div class="Slider">
+            <div class="Slides">
+         <slide><img src="range.jpg"></slide>
+           <slide><img src="clioo.jpg" style="width: 550px;"></slide>
+         <slide><img src="mercedes.jpg"></slide>
+            <slide><img src="bmw.jpg" style="width:  610px;";></slide>
+            Qashqai.jpg">
+           <img src="Rifter.jpg">
+           <img src="Discovery.jpg">
+           <img src="Tiguan.jpg
+               <slide><img src="peugeot.jpg"></slide>-->
+
+
+    </div>
+
+    <div class="rc-list">
+        <h3>Location Particulier</h3>
+        <img src="assets/images/Qashqai.jpg" width="335" height="290">
+        <p>Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages</p>
+        <a href="/location-voiture-maroc/suv-4x2-4x4/"
+           title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails </a>
+    </div>
+
+    <div class="rc-list">
+        <h3>Location Professionnelle</h3>
+        <img src="assets/images/Rifter.jpg" width="336" height="290">
+        <p>Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la
+            performance</p>
+        <a href="/location-voiture-maroc/suv-4x2-4x4/"
+           title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails</a>
+    </div>
+
+    <div class="rc-list">
+        <h3>Location de Luxe</h3>
+        <img src="assets/images/Discovery.jpg" width="335" height="290">
+        <p> Vivez une expérience unique avec la gamme PREMIUM! Conçue spécialement pour les amateurs du prestige,
+            confort et plaisir! </p>
+        <a href="/location-voiture-maroc/premium/"
+           title="Découvrez tous nos véhicules de location de la catégorie Premium">+Détails</a>
+    </div>
+
+    <!--<div id="div_list">
+            <p>Une gamme de véhicules utilitaires pour vous accompagner dans vos besoins professionnels</p>
+            <a href="/location-voiture-maroc/utilitaires/" title="Découvrez tous nos véhicules de location de la catégorie Utilitaires" >+ de détails &gt;</a>
+    </div>-->
+    </div>
+</section>
+</body>
+</html>
