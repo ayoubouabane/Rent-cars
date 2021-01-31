@@ -1,135 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mon Site</title>
+    <meta charset="utf-8"/>
+    <title>CAR RENTAL WEBSITE</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 <header>
     <div id="titre_principal">
         <img src="assets/images/log.jpg" width="200" height="150">
-    </div>
-    <!--barre défilante"-->
-    <div>
-        <marquee> Meilleures Promos et Véhicules</marquee>
-    </div>
-    <!--fin de la barre défilante-->
+        <span>CAR RENTAL WEBSITE</span>
     </div>
     <nav>
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Inscription</a></li>
-            <li><a href="#">Authentification</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="/C:/Users/AYOUB/Desktop/TP HTML5/assets/images.html">Galerie</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Fleet</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
+
 </header>
-<div class="sld">
-    <div  class="slider">
-        <div class="slide current">
-            <div class="content">
-                <h1>Slide One</h1>
-            </div>
+<!-- Main -->
+<div class="slider">
+    <div class="slide current" style="background: url('assets/images/Qashqai.jpg') no-repeat center center/cover;">
+        <div class="content">
         </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Two</h1>
-            </div>
+    </div>
+    <div class="slide" style="background: url('assets/images/Volan.jpg') no-repeat center top/cover;">
+        <div class="content">
         </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Three</h1>
-            </div>
+    </div>
+    <div class="slide" style="background: url('assets/images/Porsche.jpg') no-repeat center top/cover;">
+        <div class="content">
         </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Four</h1>
-            </div>
+    </div>
+    <div class="slide" style="background: url('assets/images/slide1.jpg') no-repeat center top/cover;">
+        <div class="content">
         </div>
     </div>
 </div>
+<div class="Buttons">
+    <button id="prev"><i class="fas fa-arrow-left"></i><</button>
+    <button id="next"><i class="fas fa-arrow-right"></i>></button>
+</div>
 
-    <div class="Buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i><</button>
-        <button id="next"><i class="fas fa-arrow-right"></i>></button>
-    </div>
-    <script src="assets\js\sld.js"></script>
-<!--   <div class="container">
-        <img name="Slide" width="100%" height="600">
-        <script>
-            var i = 0; //Start point
-            var images = [];
-            var time = 3000;
+<h2 class="h2">Offers</h2>
 
-            //Images list
-            images[0] = 'assets/images/Qashqai.jpg';
-            images[1] = 'assets/images/Rifter.jpg';
-            images[2] = 'assets/images/Discovery.jpg';
-            images[3] = 'assets/images/Tiguan.jpg';
-            images[4] = 'assets/images/Jaguar.jpg';
-            images[5] = 'assets/images/jaquar.jpg';
-            images[6] = 'assets/images/Porsche.jpg';
-            images[7] = 'assets/images/MERCEDE.jpg';
-            images[8] = 'assets/images/Volan.jpg';
+<div class="rc-list">
+    <h3>Location Particulier</h3>
+    <img src="assets/images/Qashqai.jpg" width="335" height="290">
+    <p>Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages</p>
+    <a href="/location-voiture-maroc/suv-4x2-4x4/"
+       title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails </a>
+</div>
 
-            //Change Images
-            function changeImg() {
-                document.Slide.src = images[i];
+<div class="rc-list">
+    <h3>Location Professionnelle</h3>
+    <img src="assets/images/Rifter.jpg" width="336" height="290">
+    <p>Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la
+        performance</p>
+    <a href="/location-voiture-maroc/suv-4x2-4x4/"
+       title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails</a>
+</div>
 
-                if (i < images.length - 1) {
-                    i++;
-                }
-                else {
-                    i = 0;
-                }
-
-                setTimeout("changeImg()", time);
-            }
-
-            window.onload = changeImg();
-        </script>
-        <!-- <div class="Slider">
-            <div class="Slides">
-         <slide><img src="range.jpg"></slide>
-           <slide><img src="clioo.jpg" style="width: 550px;"></slide>
-         <slide><img src="mercedes.jpg"></slide>
-            <slide><img src="bmw.jpg" style="width:  610px;";></slide>
-            Qashqai.jpg">
-           <img src="Rifter.jpg">
-           <img src="Discovery.jpg">
-           <img src="Tiguan.jpg
-               <slide><img src="peugeot.jpg"></slide>
-
-
-    </div>
- 
-    <div class="rc-list">
-        <h3>Location Particulier</h3>
-        <img src="assets/images/Qashqai.jpg" width="335" height="290">
-        <p>Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages</p>
-        <a href="/location-voiture-maroc/suv-4x2-4x4/"
-           title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails </a>
-    </div>
-
-    <div class="rc-list">
-        <h3>Location Professionnelle</h3>
-        <img src="assets/images/Rifter.jpg" width="336" height="290">
-        <p>Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la
-            performance</p>
-        <a href="/location-voiture-maroc/suv-4x2-4x4/"
-           title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails</a>
-    </div>
-
-    <div class="rc-list">
-        <h3>Location de Luxe</h3>
-        <img src="assets/images/Jaguar.jpg" width="335" height="290">
-        <p> Vivez une expérience unique avec la gamme PREMIUM! Conçue spécialement pour les amateurs du prestige,
-            confort et plaisir! </p>
-        <a href="/location-voiture-maroc/premium/"
-           title="Découvrez tous nos véhicules de location de la catégorie Premium">+Détails</a>
-    </div>
--->
-
+<div class="rc-list">
+    <h3>Location de Luxe</h3>
+    <img src="assets/images/Jaguar.jpg" width="335" height="290">
+    <p> Vivez une expérience unique avec la gamme PREMIUM! Conçue spécialement pour les amateurs du prestige,
+        confort et plaisir! </p>
+    <a href="/location-voiture-maroc/premium/"
+       title="Découvrez tous nos véhicules de location de la catégorie Premium">+Détails</a>
+</div>
+<script src="assets/js/slider.js"></script>
 </body>
 </html>
