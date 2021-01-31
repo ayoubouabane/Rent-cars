@@ -1,0 +1,137 @@
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+    background: #F0F2F5;
+    margin-right:  0;
+
+
+}
+body{
+	margin: 0;
+	padding-right: 0;
+	line-height: 1.5;
+	background: #F0F2F5;
+	
+}
+nav ul
+{	
+	float: right ;
+	list-style-type: none;
+	display: flex;
+	background-color: cadetblue;
+	border:1px  solid #585858 ;
+	margin-left: 0%;
+}
+nav li
+{
+
+	margin-right: 15px;
+	font-size: 20px;
+}
+nav a
+{	
+	
+	text-decoration-line: none;
+	width: 100%;
+	color: black;
+}
+.h2 {
+	margin-left: 2em;
+	font-weight: bold;
+	color: #585858;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.rc-list
+{
+	float:left;
+	width: 25%;
+	border: 1px solid #ccc;
+	margin: 40px;
+	padding-top: 0%;
+	box-sizing: border-box;
+	margin-top: 2em;
+}
+div h3
+{
+	height: 40px;
+	background-color: black;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	text-align: center;
+	padding-top: 20px;
+}
+div p
+{
+	color: #626567;
+	margin: 5px;
+}
+div a
+{
+	margin: 45%;
+}
+#titre_principal{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+nav a:hover{
+	color: #760001;
+	border-bottom: 2px solid #760001;
+}
+.slider{
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+
+}
+.content h1{
+		display: none;
+}
+.slide{
+
+	position:absolute;
+	width: 100vw;
+	height: 80%;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+}
+.slide.current{
+	opacity: 1;
+}
+.Buttons button#next{
+	position: absolute;
+	top: 75%;
+	right: 15px;
+}
+.Buttons button#prev{
+	position: absolute;
+	top: 75%;
+	left: 15px;
+}
+.Buttons button{
+	border: 2px solid #fff;
+	background-color: transparent;
+	color: #FFF;
+	cursor: pointer;
+	padding: 13px 15px;
+	border-radius: 50%;
+	outline: none;
+}
+
+.slide:first-child{
+	background: url('Qashqai.jpg') no-repeat center center/cover; 
+}
+.slide:nth-child(2){
+	background:url('Volan.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(3){
+	background: url('Porsche.jpg') no-repeat center top/cover; 
+}
+.slide:nth-child(4){
+	background: url('slide1.jpg') no-repeat center top/cover; 
+}

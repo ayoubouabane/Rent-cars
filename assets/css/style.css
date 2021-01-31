@@ -1,88 +1,129 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-}
-
-header {
-    background: #626567;
-    height: 150px;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    margin-bottom: 40px;
-}
-
-body {
-    background-color: #F0F2F5;
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-
-}
-
-nav li {
-    margin-right: 15px;
-
-}
-
-nav a {
-    padding-bottom: 30px;
-    color: white;
-}
-
-.container {
-    margin-left: 160px;
-}
-
-.rc-list {
-    float: left;
-    width: 25%;
-    border: 1px solid #ccc;
-    margin: 40px;
-    padding-top: 0%;
-    box-sizing: border-box;
-}
-
-div h3 {
-    height: 40px;
-    background-color: black;
-    color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    text-align: center;
-    padding-top: 20px;
-}
-
-div p {
-    color: #626567;
-    margin: 5px;
-}
-
-div a {
-    margin: 45%;
-}
-
-/*
-.slides
+header
 {
-	width: calc(100px * 3);
-	animation: glisse 5s infinite;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
 }
-.slider
+header
 {
-	overflow: hidden;
-	margin: 150px auto;
+     background: #F0F2F5;
+     margin: 0;
+     padding: 10px 0;
+     		margin-bottom: 20%;
 }
-@keyframes glisse
+body
+{	
+	margin: 0;
+	padding-right: 0;
+	line-height: 1.5;
+	background-color: #F0F2F5;
+	
+}
+nav ul
 {
-	0% { transform: : translateX(0); }
-		33% { transform: : translateX(-500px); }
-			66% { transform: : translateX(-1000px); }
-				100% { transform: : translateX(0); }
+	list-style-type: none;
+	display: flex;
+
 }
+nav li
+{
+	margin-right:15px;
+
+}
+nav a
+{
+	text-decoration-line: none;
+	padding-bottom: 30px;
+		color: black;
+}
+
+.rc-list
+{
+	float:left;
+	width: 25%;
+	border: 1px solid #ccc;
+	margin: 40px;
+	padding-top: 0%;
+		box-sizing: border-box;
+}
+div h3
+{
+	height: 40px;
+	background-color: black;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	text-align: center;
+	padding-top: 20px;
+}
+div p
+{
+	color: #626567;
+	margin: 5px;
+}
+div a
+{
+	margin: 45%;
+}
+#titre_principal{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+nav a:hover{
+	color: #760001;
+	border-bottom: 2px solid #760001;
+}
+		/*Slider*/
+		.slider{
+			position: relative;
+			height: 100Vh;
+			width: 100vw;
+			margin-bottom: 30%;
+		}
+		/*.content h1{
+				display: none;
+		}*/
+		.slide{
+			position:absolute;
+			width: 100vw;
+			height: 80%;
+			opacity: 0;
+			transition: opacity 0.4s ease-in-out;
+		}
+		.slide.current{
+			opacity: 1;
+		}
+		.Buttons button#next{
+			position: absolute;
+			top: 40%;
+			right: 15px;
+		}
+		.Buttons button#prev{
+			position: absolute;
+			top: 40%;
+			left: 15px;
+		}
+		.Buttons button{
+			border: 2px solid #fff;
+			background-color: transparent;
+			color: #fff;
+			cursor: pointer;
+			padding: 13px 15px;
+			border-radius: 50%;
+			outline: none;
+		}
+		
+		.slide:first-child{
+			background: url('assets/images/Qashqai.jpg') no-repeat center center/cover; 
+		}
+		.slide:nth-child(2){
+			background:url('assets/images/Volan.jpg') no-repeat center top/cover;
+		}
+		.slide:nth-child(3){
+			background: url('assets/images/Porsche.jpg') no-repeat center top/cover; 
+		}
+		.slide:nth-child(4){
+			background: url('assets/images/slide1.jpg') no-repeat center top/cover; 
+		}
