@@ -1,28 +1,43 @@
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-const auto = true;
-const intervalTime = 5000;
-let slideInterval;
+var slideIndex = 1;
+showSlides(slideIndex);
 
-const nextSlide = ()=>{
-    const current = document.querySelector('.current');
-    current.classList.remove('current');
-    if(current.nextElementSibling){
-        current.nextElementSibling.classList.add('current');
-    }else{slides[0].classList.add('current');}
-    setTimeout(()=>current.classList.remove('current'));
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-const prevSlide = ()=>{
-    const current = document.querySelector('.current');
-    current.classList.remove('current');
-    if(current.previousElementSibling){
-        current.previousElementSibling.classList.add('current');
-    }else{slides[slides.length -1].classList.add('current');}
-    setTimeout(()=>current.classList.remove('current'));
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
-    //Button events
-    next.addEventListener('click',e =>{nextSlide();})
-    prev.addEventListener('click',e =>{prevSlide();})
-    //Auto increment
-    if(auto){slideInterval=setInterval(nextSlide,intervalTime)};
+
+function showSlides(n) {
+  var i;
+  var slides = document.querySelectorAll(".mySlides");
+  var dots = document.querySelectorAll(".dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+//Auto increment
+var slideIndexy = 0;
+showSlide();
+
+function showSlide() {
+  var j;
+  var slides = document.querySelectorAll(".mySlides");
+  for (j = 0; j < slides.length; j++) {
+    slides[j].style.display = "none";
+  }
+  slideIndexy++;
+  if (slideIndexy > slides.length) {slideIndexy = 1}
+  slides[slideIndexy-1].style.display = "block";
+  setTimeout(showSlide, 5000); // Change image every 2 seconds
+}

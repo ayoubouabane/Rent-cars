@@ -1,79 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>CAR RENTAL WEBSITE</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-<header>
-    <div id="titre_principal">
-        <img src="assets/images/log.jpg" width="200" height="150">
-        <span>CAR RENTAL WEBSITE</span>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Offers</a></li>
-            <li><a href="#">Fleet</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <header>
+        <div id="titre_principal">
+            <img src="assets/images/log.jpg" width="200" height="150">
+            <span>Location de voitures au Maroc</span>
+        </div>
+    </header>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-light sticky-top justify-content-center">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accueil</a>
+            </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Authentification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galerie</a>
+              </li>    
+            </ul>  
+        </nav>
+
+    
+    <!-- Slideshow-->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
         </ul>
-    </nav>
-
-</header>
-<!-- Main -->
-<div class="slider">
-    <div class="slide current" style="background: url('assets/images/Qashqai.jpg') no-repeat center center/cover;">
-        <div class="content">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/Qashqai.jpg" alt="Los Angeles" width="100%" height="600px">
+            <div class="carousel-caption">
+              <p>We had such a great time in LA!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Volan.jpg" alt="Chicago" width="100%" height="600px">
+            <div class="carousel-caption">
+              <p>Thank you, Chicago!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Porsche.jpg" alt="New York" width="100%" height="600px">
+            <div class="carousel-caption">
+              <p>We love the Big Apple!</p>
+            </div>  
+            <img src="assets/images/slide1.jpg" alt="New York" width="100%" height="600px">
+            <div class="carousel-caption">
+              <p>We love the Big Apple!</p>
+            </div>  
+          </div>
         </div>
-    </div>
-    <div class="slide" style="background: url('assets/images/Volan.jpg') no-repeat center top/cover;">
-        <div class="content">
-        </div>
-    </div>
-    <div class="slide" style="background: url('assets/images/Porsche.jpg') no-repeat center top/cover;">
-        <div class="content">
-        </div>
-    </div>
-    <div class="slide" style="background: url('assets/images/slide1.jpg') no-repeat center top/cover;">
-        <div class="content">
-        </div>
-    </div>
-</div>
-<div class="Buttons">
-    <button id="prev"><i class="fas fa-arrow-left"></i><</button>
-    <button id="next"><i class="fas fa-arrow-right"></i>></button>
-</div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
 
-<h2 class="h2">Offers</h2>
+    <h2 class="h2">Offers</h2>
 
-<div class="rc-list">
-    <h3>Location Particulier</h3>
-    <img src="assets/images/Qashqai.jpg" width="335" height="290">
-    <p>Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages</p>
-    <a href="/location-voiture-maroc/suv-4x2-4x4/"
-       title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails </a>
-</div>
+    <div class="rc-list">
+        <h3>Location Particulier</h3>
+        <img src="assets/images/Qashqai.jpg" width="335" height="290">
+        <p>Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages</p>
+        <a href="/location-voiture-maroc/suv-4x2-4x4/"
+            title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails </a>
+    </div>
 
-<div class="rc-list">
-    <h3>Location Professionnelle</h3>
-    <img src="assets/images/Rifter.jpg" width="336" height="290">
-    <p>Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la
-        performance</p>
-    <a href="/location-voiture-maroc/suv-4x2-4x4/"
-       title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails</a>
-</div>
+    <div class="rc-list">
+        <h3>Location Professionnelle</h3>
+        <img src="assets/images/Rifter.jpg" width="336" height="290">
+        <p>Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la
+            performance</p>
+        <a href="/location-voiture-maroc/suv-4x2-4x4/"
+            title="Découvrez tous nos véhicules de location de la catégorie Suv et 4wd">+Détails</a>
+    </div>
 
-<div class="rc-list">
-    <h3>Location de Luxe</h3>
-    <img src="assets/images/Jaguar.jpg" width="335" height="290">
-    <p> Vivez une expérience unique avec la gamme PREMIUM! Conçue spécialement pour les amateurs du prestige,
-        confort et plaisir! </p>
-    <a href="/location-voiture-maroc/premium/"
-       title="Découvrez tous nos véhicules de location de la catégorie Premium">+Détails</a>
-</div>
-<script src="assets/js/slider.js"></script>
+    <div class="rc-list">
+        <h3>Location de Luxe</h3>
+        <img src="assets/images/Jaguar.jpg" width="335" height="290">
+        <p> Vivez une expérience unique avec la gamme PREMIUM! Conçue spécialement pour les amateurs du prestige,
+            confort et plaisir! </p>
+        <a href="/location-voiture-maroc/premium/"
+            title="Découvrez tous nos véhicules de location de la catégorie Premium">+Détails</a>
+    </div>
+    <script src="assets/js/slider.js"></script>
 </body>
+
 </html>
