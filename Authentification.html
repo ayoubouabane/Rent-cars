@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.png">
+
+    <title>CAR RENTAL WEBSITE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <img src="assets/images/banner.jpg" id="banner" alt="Responsive image" >
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top ">
+
+    <a href="#" id="rc-logo" class="navbar-brand d-flex ">
+        <img src="assets/images/logo.png" width="60" height="30">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active ">
+                <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inscription</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Authentification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Galerie</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main role="main"><h2>Login Form</h2>
+    <style>
+        h2{text-align: center;text-decoration: underline;}
+        .container {
+          border-radius: 5px;
+          background-color: #929296;
+          padding: 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          width: 50%;
+        }
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        button {
+          background-color: #121412;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left:50%;
+          margin-top: 15px;
+        }
+        
+        button:hover {
+          background-color: #5645a0;
+        }
+        
+        .cancelbtn {
+          width: 50%;
+          padding: 10px 18px;
+          background-color: #f44336;
+          margin-left: 10%;
+          
+        }
+        
+        
+        
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+          
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+             
+          }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/action_page.php" method="post" class="form">
+        <label for="uname"><b>Login *</b></label>
+        <input type="text" placeholder="Entez votre login" id="uname" required>
+    
+        <label for="psw"><b>Mot de passe *</b></label>
+        <input type="password" placeholder="Entez votre mot de passe" id="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+            </form>
+        </div>
+
+    <footer>
+    <div class="footer">
+    <div class="plan-de-site">
+        <div>
+            <ul style="list-style-type:none;">
+                <li class="li-title"><strong>Véhicules en location</strong></li>
+                <li><a href="" title="Location Particulier" class="list">Location Particulier</a></li>
+                <li><a href="" title="Location Professionnelle" class="list">Location Professionnelle</a></li>
+                <li><a href="" title="Location De Luxe" class="list">Location De Luxe</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul style="list-style-type:none;">
+                <li class="li-title"><strong>Notre Agence</strong></li>
+                <li><a href="" title="Authentification" class="list">Authentification</a></li>
+                <li><a href="" title="Inscription" class="list">Inscription</a></li>
+                <li><a href="" title="Galerie" class="list">Galerie</a></li>
+            </ul>
+        </div>
+        <div>
+            <li class="li-title" style="list-style-type:none;"><strong>Contact Info </strong></li>
+            <i style="font-size:24px" class="fa">&#xf095;</i>&nbsp;:&nbsp;0798347641<br>
+            <i style="font-size:24px" class="fa">&#xf0e0;</i>&nbsp;:&nbsp;Rentcars@gmail.com <br>
+            <i style="font-size:24px" class="fa">&#xf041;</i>&nbsp;:&nbsp;Amal 5 Avenue Al majd Rabat
+        </div>
+    </div>
+        <section >
+	        <div class="map">
+		    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=33.971889,%20-6.889591&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+		    </iframe>
+	    </section>
+        <section class="copy">
+            <p style="color: aliceblue;">Copyright &copy; Rent cars-2021-Powred by &nbsp;<a href="https://www.linkedin.com/in/ouabane-ayoub/" title="Powered by Ayoub OUABANE"> Ayoub OUABANE</a>
+            </p>
+        </section>
+    </div>
+	</footer>
+
+</main><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

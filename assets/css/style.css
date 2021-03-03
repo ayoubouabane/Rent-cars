@@ -6,8 +6,6 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     margin-right: 0;
-    background: url('assets/images/banniere.jpg') center ;
-    background-size: 210px;
     
 }
 
@@ -17,6 +15,12 @@ body {
     line-height: 1.5;
     background: #F0F2F5;
 
+}
+
+#banner{
+    width: 100%;
+    height: 10em;
+    justify-content:;
 }
 /*header nav ul{
     position:-webkit-sticky;
@@ -48,6 +52,8 @@ nav a {
     color: black;
 }
 */
+
+
 span{
     margin-left: 2em ;
     text-transform: uppercase;
@@ -60,25 +66,44 @@ span{
     
 }
 .h2 {
-    margin-left: 3em;
+    margin-left: 1em;
+    margin-top: 2em;
     font-weight: bold;
     color: #585858;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
 
-.rc--offers-item {
-    float: left;
-    width: 25%;
-    border  :1px solid #ccc;
-    border-radius:25px;
-    margin: 40px;
-    padding-top: 0%;
-    box-sizing: border-box;
-    margin-top: 2em;
-    margin-left: 4em;
-}
 
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    margin: 20px;
+    
+    border-radius:25px 25px 0;
+  }
+  .column:hover{
+    
+      border: 1px solid steelblue;
+      padding: 0;
+  }
+  .row{
+      margin-right: 0;
+  }
+  /* Clearfix (clear floats) 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ */
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
 div h3 {
     height: 40px;
     background-color: black;
@@ -87,15 +112,21 @@ div h3 {
     margin-bottom: 0px;
     margin-right: 0px;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 2.5em;
+    padding-top: 10px;
+    padding-bottom: 1.5em;
     border-radius:25px 25px 0 0;
+    font-size: large;
 }
 
-div p {
+div p{
     color: #626567;
     margin: 5px;
     text-align: center;
+}
+.reserver{
+    justify-content: center;
+    background-color: aqua;
+    
 }
 /*
 div a {
@@ -105,6 +136,7 @@ div a {
 #rc-logo {
     margin-top: 20px;
     margin-left: 20px;
+    margin-top:0;
 }
 /*
 nav a:hover {
@@ -115,4 +147,58 @@ nav a:hover {
 /**
 * Slider
 */
+
+.list:hover{
+    border: 1px solid black;
+    background-color: rgb(99, 4, 250);
+    color: #F0F2F5;
+    text-decoration-line:none;
+}
+.list{
+    color: black;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+.footer{
+    
+    border-top: 1px solid black;
+}
+.plan-de-site{
+    display: flex;
+    flex-wrap: wrap;
+}
+.plan-de-site>div{
+    width: 30%;
+    text-decoration:none;
+    margin: 20px;
+    
+    
+}
+.li-title{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.copy{
+    padding: 0.5em;
+      color:rgb(255, 255, 255);
+      background-color: rgb(36, 37, 37);
+      text-align: center;
+      font-size: large;
+}
+
 
