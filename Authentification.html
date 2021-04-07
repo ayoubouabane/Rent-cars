@@ -83,8 +83,9 @@
           border: none;
           border-radius: 4px;
           cursor: pointer;
-          margin-left:50%;
           margin-top: 15px;
+          width: 100%;
+          
         }
         
         button:hover {
@@ -92,16 +93,13 @@
         }
         
         .cancelbtn {
-          width: 50%;
+          width: 100%;
           padding: 10px 18px;
           background-color: #f44336;
-          margin-left: 10%;
+          margin-top:1%;
+          
           
         }
-        
-        
-        
-        
         span.psw {
           float: right;
           padding-top: 16px;
@@ -119,9 +117,11 @@
              
           }
         }
+        body{
+            background-image: url(/assets/images/Porsche.jpg);
+        }
     </style>
-    </head>
-    <body>
+    
         <div class="container">
             <form action="/action_page.php" method="post" class="form">
         <label for="uname"><b>Login *</b></label>
@@ -131,11 +131,9 @@
         <input type="password" placeholder="Entez votre mot de passe" id="psw" required>
             
         <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
+        
         <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        
             </form>
         </div>
 
@@ -145,9 +143,9 @@
         <div>
             <ul style="list-style-type:none;">
                 <li class="li-title"><strong>Véhicules en location</strong></li>
-                <li><a href="" title="Location Particulier" class="list">Location Particulier</a></li>
-                <li><a href="" title="Location Professionnelle" class="list">Location Professionnelle</a></li>
-                <li><a href="" title="Location De Luxe" class="list">Location De Luxe</a></li>
+                <li><a href="Location_particulier.html" title="Location Particulier" class="list">Location Particulier</a></li>
+                <li><a href="Location_professionnelle.html" title="Location Professionnelle" class="list">Location Professionnelle</a></li>
+                <li><a href="Location_luxe.html" title="Location De Luxe" class="list">Location De Luxe</a></li>
             </ul>
         </div>
         <div>

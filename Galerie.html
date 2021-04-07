@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="favicon.png">
 
     <title>CAR RENTAL WEBSITE</title>
 
@@ -15,13 +15,86 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+      <style>
+   #myImg {
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  margin-top: 7%;
+}
+
+
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content,img { 
+    width: 100%;
+  }
+}
+      </style>
 </head>
 
 <body>
 
 
     <img src="assets/images/banner.jpg" id="banner" alt="Responsive image" >
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top ">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top ">
 
     <a href="index.html" id="rc-logo" class="navbar-brand d-flex ">
         <img src="assets/images/logo.png" width="60" height="30">
@@ -37,7 +110,7 @@
 
         <ul class="navbar-nav mr-auto ">
             <li class="nav-item active ">
-                <a class="nav-link" href="/">Accueil</a>
+                <a class="nav-link" href="index.html">Accueil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Inscription.html">Inscription</a>
@@ -54,71 +127,23 @@
         </ul>
     </div>
 </nav>
-
-<main role="main" class="container-fluid-p-0">
-
-    <!-- Slideshow-->
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/Qashqai.jpg" width="100%" height="550px">
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/Volan.jpg" width="100%" height="550px">
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/Porsche.jpg"width="100%" height="550px">
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/slide1.jpg" width="100%" height="550px">
-                <div class="carousel-caption">
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    <h2 class="h2">Offers</h2>
-     <section>
-        <div class="row">
-        <div class="column">
-            <h3>Location Particulier</h3>
-         <a href="Location_particulier.html">   <img src="assets/images/Qashqai.jpg" width=100%></a>
-            <p>Idéales pour se faufiler en ville mais aussi aptes à prendre la route sans trop de bagages.</p>
-        </div>
-        
-        <div class="column">
-            <h3>Location Professionnelle</h3>
-            <a href="Location_professionnelle.html"><img src="assets/images/Rifter.jpg" width=100%></a>
-            <p>Cross-Over ou Tout Terrain, idéals pour sortir des sentiers battus en alliant le plaisir et la
-                performance.
-            </p>  
-        </div>
-
-        <div class="column">
-            <h3>Location de Luxe</h3>
-            <a href="Location_luxe.html"> <img src="assets/images/Jaguar.jpg" width=100%></a>
-            <p> Vivez une expérience unique avec la gamme PREMIUM!</p>
-        </div>
-    </div>
-</section>
-<footer>
+<main role="main">
+  
+<img id="myImg" src="assets/images/Qashqai.jpg" width="333" height="200"onclick="onClick(this)">
+<img id="myImg" src="assets/images/bmw.jpg"  width="333" height="200"onclick="onClick(this)">
+ <img id="myImg" src="assets/images/Tiguan.jpg" width="333" height="200"onclick="onClick(this)">
+ <img id="myImg" src="assets/images/Porsche.jpg" width="333" height="200"onclick="onClick(this)">
+ <img id="myImg" src="assets/images/MERCEDE.jpg" width="333" height="200"onclick="onClick(this)">
+ <img id="myImg" src="assets/images/Jaguar.jpg" width="333" height="200"onclick="onClick(this)">
+ <img id="myImg" src="assets/images/jaquar.jpg" width="333" height="200"onclick="onClick(this)">
+ <img id="myImg" src="assets/images/Discovery.jpg" width="333" height="200"onclick="onClick(this)">
+<!-- The Modal -->
+<div id="modal01" class="modal"onclick="this.style.display='none'">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  
+</div>
+    <footer>
     <div class="footer">
     <div class="plan-de-site">
         <div>
@@ -162,7 +187,15 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/slider.js"></script>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+
 </script>
 </body>
 </html>

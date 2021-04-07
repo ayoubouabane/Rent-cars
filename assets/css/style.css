@@ -20,7 +20,6 @@ body {
 #banner{
     width: 100%;
     height: 10em;
-    justify-content:;
 }
 /*header nav ul{
     position:-webkit-sticky;
@@ -66,7 +65,7 @@ span{
     
 }
 .h2 {
-    margin-left: 1em;
+    margin-left: 2em;
     margin-top: 2em;
     font-weight: bold;
     color: #585858;
@@ -80,15 +79,16 @@ span{
     width: 30%;
     padding: 5px;
     margin: 20px;
-    
-    border-radius:25px 25px 0;
+    border:2px solid rgb(87, 66, 107);
+      border-radius:25px 25px 0;
   }
   .column:hover{
     
-      border: 1px solid steelblue;
-      padding: 0;
+    border: 1px solid steelblue;
+    padding: 0%;
   }
   .row{
+      margin-left: 2em;
       margin-right: 0;
   }
   /* Clearfix (clear floats) 
@@ -123,11 +123,7 @@ div p{
     margin: 5px;
     text-align: center;
 }
-.reserver{
-    justify-content: center;
-    background-color: aqua;
-    
-}
+
 /*
 div a {
     margin: 45%;
@@ -138,42 +134,21 @@ div a {
     margin-left: 20px;
     margin-top:0;
 }
-/*
-nav a:hover {
-    background-color: cadetblue;
-    border-bottom: 2px solid #760001;
-}
-*/
-/**
-* Slider
-*/
+
 
 .list:hover{
     border: 1px solid black;
-    background-color: rgb(99, 4, 250);
+    background-color: rgb(36, 27, 51);
     color: #F0F2F5;
     text-decoration-line:none;
+    list-style-type:initial;
 }
 .list{
     color: black;
 }
-.button {
-    border: none;
-    outline: 0;
-    display: inline;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
+
 .footer{
-    
+    background-color: rgb(223, 228, 233);
     border-top: 1px solid black;
 }
 .plan-de-site{
