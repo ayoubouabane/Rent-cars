@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="assets/images/logo.png">
 
     <title>CAR RENTAL WEBSITE</title>
 
@@ -16,6 +16,78 @@
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      input[type=text],input[type=email],input[type=password] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        margin: 10px;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #121412;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left:30%;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #5645a0;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #929296;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 50%;
+      }
+      
+      .col25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      h2{text-align: center;text-decoration: underline;}
+      
+      @media screen and (max-width: 600px) {
+        .col25, .col75 {
+          width: 100%; 
+        }}
+        @media screen and (max-width: 600px) {
+        [type=submit] {
+          width: 100%;
+          margin-left: 20%;
+          margin-top: 5px; 
+      }}
+      </style>
+      
 </head>
 
 <body>
@@ -57,83 +129,8 @@
 </nav>
 
 <main role="main">
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        input[type=text],input[type=email],input[type=password] {
-          width: 100%;
-          padding: 12px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          resize: vertical;
-        }
-        
-        label {
-          padding: 12px 12px 12px 0;
-          margin: 10px;
-          display: inline-block;
-        }
-        
-        input[type=submit] {
-          background-color: #121412;
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          margin-left:30%;
-        }
-        
-        input[type=submit]:hover {
-          background-color: #5645a0;
-        }
-        
-        .container {
-          border-radius: 5px;
-          background-color: #929296;
-          padding: 20px;
-          margin-bottom: 20px;
-          width: 50%;
-        }
-        
-        .col25 {
-          float: left;
-          width: 25%;
-          margin-top: 6px;
-        }
-        
-        .col75 {
-          float: left;
-          width: 75%;
-          margin-top: 6px;
-        }
-        
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        h2{text-align: center;text-decoration: underline;}
-        
-        @media screen and (max-width: 600px) {
-          .col25, .col75 {
-            width: 100%; 
-          }
-          @media screen and (max-width: 600px) {
-          [type=submit] {
-            width: 100%;
-            margin-left: 20%;
-            margin-top: 5px; 
-        }
-        </style>
-        </head>
-        <body>
         
         <h2>Inscription :</h2>
-        
-        
         <div class="container">
           <form action="/action_page.php">
           <div class="row">
@@ -211,11 +208,8 @@
     </div>
 	</footer>
 
-</main><!-- /.container -->
+</main>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
